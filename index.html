@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM JS</title>
+</head>
+<body>
+
+    <p id="para">
+        
+    </p>
+    <ul>
+        Liste des Etudiants
+        <li>Etudiant 1</li>
+        <li>Etudiant 2</li>
+        <li>Etudiant 3</li>
+        <li>Etudiant 4</li>
+        <li>Etudiant 5</li>
+        <li>Etudiant 6</li>
+        <li>Etudiant 7</li>
+    </ul>
+
+    <h1 id="title"></h1>
+
+    <p id="bot1">Mr Bot est trop Swagg ce Matin</p>
+
+    <button id="btn1" onclick="color('red')">Red</button>
+    <button id="btn2" onclick="color('blue')">Blue</button>
+
+    <script>
+
+        // document.getElementById("para").innerHTML = ["Je suis un paragraphe depuis JavaScript".toUpperCase()];
+        // document.getElementById("para").style.color = "purple";
+        // document.getElementById("title").innerHTML = document.getElementsByTagName("ul")[0].children[4].innerHTML;
+
+        // function colorRed(){
+            
+        //     let redColor = document.getElementById("bot1").style.color = "red";
+        // }
+
+
+        // function colorBlue(){
+            
+        //     let blueColor = document.getElementById("bot2").style.color = "blue";
+        // }
+
+        function color(newColor){
+            
+            document.getElementById("bot1").style.color = newColor;
+        }
+        
+    </script>
+</body>
+</html>
