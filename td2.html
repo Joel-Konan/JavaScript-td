@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD2: Les evenelents</title>
+</head>
+<body>
+    <p id="palu"></p>
+
+    <script type="text/javascript">
+        let el = document.getElementById("palu");
+        addEventListener('click', function message(){
+            let prenoms = prompt('Entrez Votre Prenoms');
+            let age = prompt('Entrez votre Age');
+            el.innerHTML = ["Bienvenu Mr/Mme "+prenoms+", "+" vous avez "+age+" ans"];
+        });
+    </script>
+</body>
+</html>
