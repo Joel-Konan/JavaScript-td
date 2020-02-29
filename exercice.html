@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ampoule</title>
+
+    <!--My Style-->
+    <style>
+        .main{
+            width: 25%;
+            margin: 100px auto;
+            box-shadow: 0px 0px 10px grey;
+            border-radius: 20px;
+            text-align: center;
+            padding: 20px;
+        }
+        button{
+            width: 100%;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+            outline: none;
+            font-size: 20px;
+            color: blue;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="pic_bulboff.gif" alt="light off" >
+        <button id="btn">On</button>
+    </div>
+
+<script>
+    let img = document.getElementsByTagName('img')[0];
+    let btn = document.getElementById('btn');
+    let isAllume = false;
+
+    btn.addEventListener('click', function(){
+        if(isAllume){
+            isAllume = false;
+            img.setAttribute("src", "pic_bulboff.gif");
+            btn.innerHTML = "on";
+            
+        }else{
+            isAllume = true;
+            img.setAttribute("src", "pic_bulbon.gif");
+            btn.innerHTML = "off";
+        }
+    })
+        
+</script>
+</body>
+</html>

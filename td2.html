@@ -8,13 +8,24 @@
 <body>
     <p id="palu"></p>
 
+    <input type="text" placeholder="Prenoms" id="Prenom">
+    <input type="text" name="" id="Age" placeholder="Age">
+    <button>Send</button>
+
     <script type="text/javascript">
-        let el = document.getElementById("palu");
-        addEventListener('click', function message(){
-            let prenoms = prompt('Entrez Votre Prenoms');
-            let age = prompt('Entrez votre Age');
-            el.innerHTML = ["Bienvenu Mr/Mme "+prenoms+", "+" vous avez "+age+" ans"];
-        });
+        // let el = document.getElementById("palu");
+        // addEventListener('click', function message(){
+        //     let prenoms = prompt('Entrez Votre Prenoms');
+        //     let age = prompt('Entrez votre Age');
+        //     el.innerHTML = ["Bienvenu Mr/Mme "+prenoms+", "+" vous avez "+age+" ans"];
+        // });
+
+            let prn = document.getElementById("Prenom");
+            let age = document.getElementByid('Age');
+            let btn = document.getElementsByTagName('button');
+            btn.addEventListener('click', function(){
+                alert("Bienvenu Mr/Mme "+ prn.value + ", "+" vous avez "+age.value+" ans");
+            });
     </script>
 </body>
 </html>
